@@ -50,7 +50,7 @@ namespace HomeWork_AT_
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnBinaryReader_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -58,10 +58,10 @@ namespace HomeWork_AT_
                 BinaryReader br = new BinaryReader(fs);
                 txtBatchId.Text = br.ReadInt32().ToString();
                 txtBatchName.Text = br.ReadString();
-                txtStartDate.Text=br.ReadString();
-                txtEndDate.Text=br.ReadString();
+                txtStartDate.Text = br.ReadString();
+                txtEndDate.Text = br.ReadString();
                 txtLocation.Text = br.ReadString();
-                txtTrainerName.Text=br.ReadString();
+                txtTrainerName.Text = br.ReadString();
                 br.Close();
             }
             catch (Exception ex)
